@@ -3,3 +3,6 @@ node_modules
 
 # Exclude dist
 dist
+
+# Excluse vscode settings
+.vscode
