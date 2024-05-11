@@ -15,8 +15,9 @@
           <div class="list"><p>Groceries</p></div>
           <div class="list"><p>Camping</p></div>
         </div>
-        <div class="add-list container">
-          <p><img class="plus-icon" src="./Assets/plus.png" alt=""></p><p>Add List</p>
+        <div class="list-modal-button container">
+          <p><img class="plus-icon" src="./Assets/plus.png" alt="" /></p>
+          <p>Add List</p>
         </div>
       </div>
       <div class="task-container container">
@@ -24,6 +25,26 @@
         <div class="task-card">
           <p class="task-title"><span class="priority">!!! </span>Task 1</p>
           <p>5/11/24, 6:00 PM</p>
+        </div>
+      </div>
+    </div>
+    <div id="list-modal" class="modal">
+      <div class="modal-content">
+        <form action="">
+          <label for="name">Name: </label>
+          <input type="text" name="name" required />
+          <br />
+          <label for="list-color">Color: </label>
+          <select name="list-color" id="list-color">
+            <option value="red">Red</option>
+            <option value="orange">Orange</option>
+            <option value="yellow">Yellow</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+          </select>
+        </form>
+        <div class="modal-buttons">
+          <button id="list-cancel-btn">Cancel</button><button id="list-ok-btn">OK</button>
         </div>
       </div>
     </div>

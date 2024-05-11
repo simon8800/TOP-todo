@@ -1,0 +1,56 @@
+/* 
+bg color: #313131
+*/
+
+body {
+  background-color: #313131;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.task-container {
+  background-color: #1c1c1c;
+  height: 100%;
+  padding: 10px;
+}
+
+.list-modal-button:hover {
+  color: rgba(209, 209, 209, 1);
+  cursor: pointer;
+}
+
+.list-modal-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.plus-icon {
+  width: 15px;
+  height: auto;
+}
+
+/*********** MODALS ***********/
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;  /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px;
+  background-color: rgba(0,0,0,0.2);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.modal-content {
+  background-color: #313131;
+  margin: auto;
+  padding: 20px;
+  width: 50%;
+}
