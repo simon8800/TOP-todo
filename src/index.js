@@ -1,5 +1,6 @@
 import List from "./modules/list";
 import Todo from "./modules/todo";
+import createListItem from "./Components/ListItem";
 import "./style.css";
 
 const listContainer = document.querySelector(".list-container");
@@ -29,5 +30,13 @@ listModalOkayButton.onclick = function (event) {
   event.preventDefault();
   let listName = document.getElementById("list-name");
   let listColor = document.getElementById("list-color");
-  let newList = new List({ name: listName, color: listColor });
+  listName = listName.value;
+  listColor = listColor.value;
+
+  let list = new List({ name: listName, color: listColor });
+  let listElement = createListItem(list);
+  console.log(listElement);
+
+  listContainer.appendChild(listElement);
+  listModal.style.display = "none";
 };
