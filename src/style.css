@@ -19,16 +19,6 @@ body {
   padding: 10px;
 }
 
-.list-modal-button:hover {
-  color: rgba(209, 209, 209, 1);
-  cursor: pointer;
-}
-
-.list-modal-button {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
 
 .plus-icon {
   width: 15px;
@@ -53,4 +43,29 @@ body {
   margin: auto;
   padding: 20px;
   width: 50%;
+}
+
+/*********** BUTTONS ***********/
+
+.list-modal-button:hover {
+  background-color: rgba(49, 49, 49, 1);
+  cursor: pointer;
+}
+
+.list-modal-button {
+  border: none;
+  background-color: rgba(49, 49, 49, 1);
+  color: white;
+}
+
+.task-modal-button:hover {
+  color: rgba(209, 209, 209, 1);
+  cursor: pointer;
+}
+
+.task-modal-button {
+  border: none;
+  background: rgba(28, 28, 28, 1);
+  color: white;
+  font-size: 1.2rem;
 }

@@ -35,7 +35,6 @@ listModalOkayButton.onclick = function (event) {
 
   let list = new List({ name: listName, color: listColor });
   let listElement = createListItem(list);
-  console.log(listElement);
 
   listContainer.appendChild(listElement);
   listModal.style.display = "none";
