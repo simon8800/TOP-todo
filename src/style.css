@@ -13,7 +13,7 @@ body {
   grid-template-columns: 1fr 3fr;
 }
 
-.task-container {
+.todo-container {
   background-color: #1c1c1c;
   height: 100%;
   padding: 10px;
@@ -27,7 +27,7 @@ body {
 
 /*********** MODALS ***********/
 .modal {
-  display: none; /* Hidden by default */
+  display: none;
   position: fixed;  /* Stay in place */
   z-index: 1; /* Sit on top */
   padding-top: 100px;
@@ -48,7 +48,8 @@ body {
 /*********** BUTTONS ***********/
 
 .list-modal-button:hover {
-  background-color: rgba(49, 49, 49, 1);
+  background-color: rgba(49, 49, 49, 0.5);
+  color: rgba(209, 209, 209, 0.8);
   cursor: pointer;
 }
 
@@ -58,14 +59,14 @@ body {
   color: white;
 }
 
-.task-modal-button:hover {
-  color: rgba(209, 209, 209, 1);
+.todo-modal-button:hover {
+  color: rgba(209, 209, 209, 0.8);
   cursor: pointer;
 }
 
-.task-modal-button {
+.todo-modal-button {
   border: none;
   background: rgba(28, 28, 28, 1);
   color: white;
-  font-size: 1.2rem;
+  font-size: 2rem;
 }

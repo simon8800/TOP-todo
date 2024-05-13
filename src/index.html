@@ -14,20 +14,17 @@
         </div>
         <button class="list-modal-button">+ Add List</button>
       </div>
-      <div class="task-container container">
-        <button class="task-modal-button">+</button>
+      <div class="todo-container container">
+        <button class="todo-modal-button">+</button>
         <h1>Today</h1>
-        <div class="task-card">
-          <p class="task-title"><span class="priority">!!! </span>Task 1</p>
-          <p>5/11/24, 6:00 PM</p>
-        </div>
       </div>
     </div>
     <div id="list-modal" class="modal">
       <div class="modal-content">
+        <h2>Create New List</h2>
         <form action="">
           <label for="list-name">Name: </label>
-          <input id="list-name" type="text" name="list-name" required />
+          <input id="list-name" type="text" name="list-name" minlength="1" />
           <br />
           <label for="list-color">Color: </label>
           <select name="list-color" id="list-color">
@@ -39,6 +36,22 @@
           </select>
           <div class="modal-buttons">
             <button id="list-cancel-btn">Cancel</button><input type="submit" id="list-ok-btn" value="OK">
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="todo-modal" class="modal">
+      <div class="modal-content">
+        <h2>Create New Todo</h2>
+        <form action="">
+          <label for="todo-title">Title: </label>
+          <input type="text" name="todo-title" id="todo-title" minlength="1">
+          <br>
+          <label for="todo-notes">Notes: </label><textarea name="todo-notes" id="todo-notes"></textarea>
+          <br>
+          <label for="todo-date">Date: </label><input id="todo-date" type="date">
+          <div class="modal-buttons">
+            <button id="todo-cancel-btn">Cancel</button><input type="submit" id="todo-ok-btn" value="OK">
           </div>
         </form>
       </div>
