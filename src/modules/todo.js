@@ -20,7 +20,6 @@ export default class Todo {
     this.priority = priority;
     this.date = date;
     this.list = getActiveList();
-    console.log(this);
     if (
       storageAvailable &&
       window.localStorage.getItem(LOCAL_STORAGE_GET_KEY) !== null
