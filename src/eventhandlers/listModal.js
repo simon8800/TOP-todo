@@ -14,7 +14,6 @@ export default function listModalHandler() {
     let listName = listNameInput.value;
     let listColor = listColorInput.value;
     let list = new List({ name: listName, color: listColor });
-
     return list;
   }
 

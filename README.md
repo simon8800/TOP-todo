@@ -9,6 +9,21 @@ This is a todo app that utilizes local storage as our persistent storage. The go
 - Todos include title, notes, date, priority
 - User can check or delete todos
 
+## Thoughts on how to build
+
+- Use brower's `localStorage` to store lists and its todos
+- When creating a new list
+    - Store in localStorage
+    - Update display
+- When creating a new todo
+    - Get list id
+    - Create todo and add to list in local storage
+    - Update display
+- Editing list
+    - Get list id
+    - Update list in localStorage
+    - Update display
+
 ## Getting comfy with webpack
 
 I'm getting comfortable with webpack as I work with it more. The following are the questions I had when I first started using webpack:

@@ -1,5 +1,6 @@
 import Todo from "../modules/todo";
 import createTodoCard from "../components/createTodoCard";
+import { getActiveList } from "./activeList";
 
 export default function todoModalHandler() {
   const todoModalButton = document.querySelector(".todo-modal-button");
@@ -7,7 +8,7 @@ export default function todoModalHandler() {
   const todoModalCancelButton = document.querySelector("#todo-cancel-btn");
   const todoModalOkayButton = document.querySelector("#todo-ok-btn");
   const listModal = document.querySelector("#list-modal");
-  const todoContainer = document.querySelector(".todo-container");
+  const todoContainer = document.querySelector(".todos");
   const todoTitleInput = document.getElementById("todo-title");
   const todoNotesInput = document.getElementById("todo-notes");
   const todoDateInput = document.getElementById("todo-date");
@@ -16,7 +17,12 @@ export default function todoModalHandler() {
     let todoTitle = todoTitleInput.value;
     let todoNotes = todoNotesInput.value;
     let todoDate = todoDateInput.value;
-    let todo = new Todo({ title: todoTitle, notes: todoNotes, date: todoDate });
+    let todo = new Todo({
+      title: todoTitle,
+      notes: todoNotes,
+      date: todoDate,
+      list: getActiveList(),
+    });
     return todo;
   }
 
