@@ -14,8 +14,6 @@ export default function populateTodoContainer(list) {
   // Set activeList to clicked list
   setActiveList(list);
   let todos = getTodos(getActiveList());
-  console.log(todos);
-  console.log(todoContainer);
   todos.forEach((todo) => {
     let todoCard = createTodoCard(todo);
     todoContainer.appendChild(todoCard);
